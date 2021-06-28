@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	font-family: monospace;
+}
+
+body {
+	overflow: hidden;
+	padding: 20px;
+}
+
+#judul, #jumlah{
+	font-size: 70px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#level {
+	font-size: 30px;
+	text-align: center;
+}
+
+#petunjuk, #soal {
+	border: 1px solid;
+	margin: auto;
+	max-width: 300px;
+	border-left-width: 5px;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+#game {
+	display: none;
+}
+
+#soal, #jwbByPemain {
+	font-size: 40px;
+	max-width: 500px;
+	margin-top: 100px;
+	border: none;
+	text-align: center;
+}
+
+#timer, #timer2 {
+	height: 2vmin;
+	width: 120vw;
+	left: -20vw;
+	top: 0;
+	position: absolute;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+}
+
+#jawab {
+	display: none;
+}
+
+#jumlah {
+	font-size: 50px;
+}
+
+#tombol {
+	width: 100vw;
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid #fff;
+}
+
+#nol, #satu {
+	width: 50vw;
+	text-align: center;
+	padding: 50px 0;
+	font-size: 20px;
+}
+
+#nol:active, #satu:active {
+	box-shadow: inset 0 0 20px #000;
+}
+
+#jwbByPemain {
+	margin-top: 10px;
+	font-size: 20px;
+	margin: auto;
+}
+
+@keyframes durasi{
+	10% {
+		width: 110vw;
+	}
+	20% {
+		width: 100vw;
+	}
+	30% {
+		width: 90vw;
+	}
+	40% {
+		width: 80vw;
+	}
+	50% {
+		width: 70vw;
+	}
+	60% {
+		width: 60vw;
+	}
+	70% {
+		width: 50vw;
+	}
+	80% {
+		width: 40vw;
+	}
+	90% {
+		width: 30vw;
+	}
+	100% {
+		width: 20vw;
+		background-color: red;
+	}
+}
